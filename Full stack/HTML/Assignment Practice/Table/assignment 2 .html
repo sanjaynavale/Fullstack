@@ -1,0 +1,24 @@
+<html>
+<body>
+<table border="3" height="200" width="500"  cellspacing="0"  >
+<tr bgcolor="#73C2FB" type="bold">
+<td > URI </td>
+<td> URI Type</td>
+<td > (X)HTML   Representation Requested </td>
+<td> RDF  Representation Requested</td>
+</tr>
+<tr>
+<td> http:// demo openlinksw.com/ North wind / customer/ ALFKI</td>
+<td>  Slash based(Identifies a document resource) </td>
+<td> 200 (OK) if an HTML document exists, OR 406 if (Not available) if one doesn't exists  </td>
+<td> 406 (Not available), or 303(Redirect) to a URL which return an RDF description of the entity ALFKI </td>
+</tr>
+<tr>
+<td> http:// demo openlinksw.com/ North wind / customer/ ALFKI #This</td>
+<td>  Hash based(Identifies an entity, object ID </td>
+<td>303 (Redirect) to associated HTML document decribing ALFKI, or 406 (Not available) if one doesn't exists  </td>
+<td> 200 (OK) return an RDF descriptionof the entity ALFKI </td>
+</tr>
+</table>
+</body>
+</html>
